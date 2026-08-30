@@ -206,6 +206,7 @@ h3 { margin-bottom: 14px; font-size: 20px; line-height: 1.4; }
 .people-grid { display: grid; grid-template-columns: 1fr; gap: 0; border-top: 1px solid rgba(33,33,33,.18); }
 .person-card { min-width: 0; display: grid; grid-template-columns: minmax(230px, 300px) 1fr; gap: clamp(38px, 6vw, 78px); align-items: center; padding: 46px 0; border-bottom: 1px solid rgba(33,33,33,.18); }
 .person-image { position: relative; margin: 0; overflow: hidden; background: #dfe5e1; }
+.esther-card .person-image { transform: translateY(-24px); }
 .person-image img { width: 100%; aspect-ratio: 4 / 4.7; object-fit: cover; object-position: center top; filter: saturate(.88); transition: transform .45s, filter .45s; }
 .person-card:hover .person-image img { transform: scale(1.03); filter: saturate(1); }
 .person-placeholder { aspect-ratio: 4 / 4.7; display: grid; place-items: center; background: linear-gradient(145deg, var(--mint), #eef3ef); }
