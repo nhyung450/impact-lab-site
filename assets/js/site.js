@@ -1,3 +1,13 @@
+const forcedDarkDetector = document.createElement("div");
+forcedDarkDetector.setAttribute("aria-hidden", "true");
+forcedDarkDetector.style.cssText = "display:none;background-color:Canvas;color-scheme:light";
+document.body.appendChild(forcedDarkDetector);
+const forcedDarkCanvas = getComputedStyle(forcedDarkDetector).backgroundColor;
+forcedDarkDetector.remove();
+if (window.matchMedia("(prefers-color-scheme: dark)").matches && forcedDarkCanvas !== "rgb(255, 255, 255)") {
+  document.documentElement.classList.add("forced-dark-fallback");
+}
+
 const pages = [
   ["Home", "index.html"],
   ["Research", "research.html"],
