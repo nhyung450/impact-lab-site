@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 :root {
+  color-scheme: only light;
   --ink: #212121;
   --muted: #555555;
   --forest: #212121;
@@ -19,7 +20,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background: var(--cream); }
 body { margin: 0; color: var(--ink); background: var(--cream); font-family: var(--sans); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
 body.nav-open { overflow: hidden; }
 img { display: block; max-width: 100%; }
