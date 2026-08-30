@@ -35,7 +35,7 @@ button { color: inherit; }
 .site-header.scrolled { height: 76px; border-bottom-color: rgba(33,33,33,.12); box-shadow: 0 8px 22px rgba(0,0,0,.05); }
 .nav-shell { width: var(--container); height: 100%; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
 .header-brand { flex: none; display: flex; align-items: center; }
-.header-logo { display: block; width: 210px; height: auto; }
+.header-logo { display: block; width: 180px; height: auto; }
 .brand { display: inline-flex; align-items: center; gap: 12px; flex: none; }
 .brand-logo { display: block; width: clamp(174px, 15vw, 218px); height: auto; }
 .brand-mark { width: 40px; height: 40px; display: flex; align-items: flex-end; gap: 3px; padding: 9px; background: var(--forest); border-radius: 2px; transform: none; }
