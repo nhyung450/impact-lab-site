@@ -319,9 +319,10 @@ h3 { margin-bottom: 14px; font-size: 20px; line-height: 1.4; }
   :root { --container: calc(100% - 34px); }
   .section { padding: 76px 0; }
   .section-sm { padding: 58px 0; }
+  .site-header, .site-header.scrolled { backdrop-filter: none; }
   .menu-toggle { display: flex; position: relative; z-index: 2; }
-  .primary-nav { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; padding: 90px 34px 50px; background: var(--forest); transform: translateX(100%); transition: transform .3s ease; }
-  .primary-nav a { width: 100%; padding: 8px 0; color: var(--white); font-family: var(--serif); font-size: 38px; font-weight: 400; }
+  .primary-nav { position: fixed; inset: 0; height: 100dvh; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px; padding: 90px 34px 50px; background: var(--forest); transform: translateX(100%); transition: transform .3s ease; }
+  .primary-nav a { width: 100%; padding: 8px 0; color: var(--white); font-family: var(--serif); font-size: 24px; font-weight: 400; line-height: 1.35; }
   .primary-nav a.active { color: var(--lime); }
   .primary-nav a::after { display: none; }
   .menu-open .primary-nav { transform: translateX(0); }
