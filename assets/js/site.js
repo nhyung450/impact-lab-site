@@ -1,6 +1,5 @@
 const pages = [
   ["Home", "index.html"],
-  ["About the Lab", "about.html"],
   ["Research", "research.html"],
   ["Publications", "publications.html"],
   ["Team", "people.html"],
@@ -50,7 +49,7 @@ if (footerTarget) {
         </div>
         <div>
           <div class="footer-links">
-            <a href="about.html">About the Lab</a><a href="research.html">Research</a>
+            <a href="research.html">Research</a>
             <a href="publications.html">Publications</a><a href="people.html">Team</a>
             <a href="teaching.html">Teaching &amp; Advising</a>
             <a href="media.html">On Media</a><a href="contact.html">Contact</a>

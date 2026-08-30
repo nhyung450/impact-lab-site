@@ -200,7 +200,7 @@ h3 { margin-bottom: 14px; font-size: 20px; line-height: 1.4; }
 .profile-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 24px; color: var(--forest); font-size: 12px; font-weight: 700; }
 .profile-link:hover { color: var(--forest-2); }
 .profile-links { display: flex; flex-wrap: wrap; gap: 0 24px; }
-.about-profile .profile-link { font-size: 15px; }
+.team-profile .profile-link { font-size: 15px; }
 .people-heading { margin-bottom: 36px; }
 .people-heading h2, .people-simple-section .section-heading h2 { font-size: 33px; }
 .people-grid { display: grid; grid-template-columns: 1fr; gap: 0; border-top: 1px solid rgba(33,33,33,.18); }
