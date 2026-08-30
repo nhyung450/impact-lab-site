@@ -38,6 +38,12 @@ if (footerTarget) {
             <img class="brand-logo" src="assets/images/impact-lab-logo.png" alt="IMPACT Lab">
           </a>
           <p>Integrating Multidisciplinary Perspectives<br>to Advance Climate Transition</p>
+          ${isActive("index.html") ? `
+          <div class="footer-affiliations" aria-label="KAIST affiliations">
+            <a href="https://cee.kaist.ac.kr/" target="_blank" rel="noreferrer">KAIST CEE</a>
+            <a href="https://gggs.kaist.ac.kr/" target="_blank" rel="noreferrer">KAIST GGGS</a>
+            <a href="https://ax.kaist.ac.kr/#/" target="_blank" rel="noreferrer">KAIST AX</a>
+          </div>` : ""}
         </div>
         <div>
           <div class="footer-links">
