@@ -1,10 +1,12 @@
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const isSamsungInternet = /SamsungBrowser/i.test(navigator.userAgent);
 const forcedDarkDetector = document.createElement("div");
 forcedDarkDetector.setAttribute("aria-hidden", "true");
-forcedDarkDetector.style.cssText = "display:none;background-color:Canvas;color-scheme:light";
+forcedDarkDetector.style.cssText = "position:fixed;left:-9999px;width:1px;height:1px;background-color:Canvas;color-scheme:light";
 document.body.appendChild(forcedDarkDetector);
 const forcedDarkCanvas = getComputedStyle(forcedDarkDetector).backgroundColor;
 forcedDarkDetector.remove();
-if (window.matchMedia("(prefers-color-scheme: dark)").matches && forcedDarkCanvas !== "rgb(255, 255, 255)") {
+if (prefersDarkScheme && (isSamsungInternet || forcedDarkCanvas !== "rgb(255, 255, 255)")) {
   document.documentElement.classList.add("forced-dark-fallback");
 }
 
