@@ -18,6 +18,9 @@ if (headerTarget) {
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header" data-header>
       <div class="nav-shell">
+        <a class="header-brand" href="index.html" aria-label="IMPACT Lab home">
+          <img class="header-logo" src="assets/images/impact-lab-logo.png" alt="IMPACT Lab">
+        </a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
           <span></span><span></span><span></span><b class="sr-only">Open menu</b>
         </button>
