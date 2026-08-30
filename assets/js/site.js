@@ -38,7 +38,7 @@ if (footerTarget) {
       <div class="footer-grid">
         <div>
           <a class="brand brand-light" href="index.html">
-            <img class="brand-logo" src="assets/images/impact-lab-logo.png" alt="IMPACT Lab">
+            <img class="brand-logo" src="assets/images/impact-lab-logo-kaist.png" alt="IMPACT Lab at KAIST">
           </a>
           <p>Integrating Multidisciplinary Perspectives<br>to Advance Climate Transition</p>
           ${isActive("index.html") ? `
