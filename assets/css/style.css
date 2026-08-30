@@ -371,6 +371,10 @@ h3 { margin-bottom: 14px; font-size: 20px; line-height: 1.4; }
   .media-card { min-height: 0; }
   .media-card h2 { font-size: 20px; }
   .form-row { grid-template-columns: 1fr; gap: 0; }
+  .footer-affiliations { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%; }
+  .footer-affiliations a { justify-self: center; white-space: nowrap; font-size: 12px; }
+  .footer-affiliations a:first-child { justify-self: start; }
+  .footer-affiliations a:last-child { justify-self: end; }
   .footer-grid { grid-template-columns: 1fr; gap: 42px; }
   .footer-grid > div:first-child { grid-column: auto; }
   .footer-bottom { gap: 20px; flex-direction: column; }
