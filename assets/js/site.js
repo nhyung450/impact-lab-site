@@ -23,6 +23,19 @@ const pages = [
 const currentPage = window.location.pathname.split("/").pop() || "index.html";
 const isActive = (href) => currentPage === href || (currentPage === "" && href === "index.html");
 
+document.addEventListener("click", (event) => {
+  if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+  const target = event.target instanceof Element ? event.target : null;
+  const link = target?.closest("a[href]");
+  if (!link || link.hasAttribute("download")) return;
+
+  const url = new URL(link.href, window.location.href);
+  if (url.origin !== window.location.origin || !url.pathname.endsWith(".html")) return;
+
+  url.searchParams.set("fresh", Date.now().toString());
+  link.href = url.href;
+}, { capture: true });
+
 const headerTarget = document.querySelector("[data-site-header]");
 if (headerTarget) {
   headerTarget.innerHTML = `
